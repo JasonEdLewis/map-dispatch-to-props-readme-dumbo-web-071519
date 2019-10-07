@@ -36,5 +36,5 @@ class App extends Component {
 //   };
 // }
 
-// Line 40 is EQUAL TO  👉🏽 ``` export default connect(mapDispatchToProps,mapDispatchToProps)(App) ```
+// Line 40 is EQUAL TO  👉🏽 ``` export default connect(mapStateToProps,mapDispatchToProps)(App) ```
 export default connect(state => ({items:state.items}),{addItem})(App);
